@@ -19,11 +19,9 @@ This repository focuses on building a strong foundation in combinational and seq
 - Xilinx Vivado Design Suite
 - XSim Simulator
 - RTL Design & Simulation
-- Synthesis and Timing Analysis
 - Waveform Verification
-- FPGA Development Flow
 
 ## Author
 
-Om Patel
+Om Patel <br>
 Electronics & Communication Engineering Undergraduate
