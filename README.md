@@ -7,7 +7,7 @@ This repository focuses on building a strong foundation in combinational and seq
 
 | Folder | Description |
 |---|---|
-| `01_Combinational` | Logic gates, multiplexers, decoders, encoders, adders, subtractors, comparators, and arithmetic circuits |
+| `01_Combinational` | multiplexers, decoders, encoders, adders, subtractors, comparators, demultiplexer, and arithmatic circuits  |
 | `02_Sequential` | Flip-flops, latches, counters, shift registers, sequence detectors, and finite state machines (FSMs) |
 | `03_Verification` | Verilog testbenches for functional verification and simulation |
 | `04_RTL_Designs` | Full RTL Module of the design |
@@ -17,7 +17,9 @@ This repository focuses on building a strong foundation in combinational and seq
 
 - Verilog HDL
 - Xilinx Vivado Design Suite
-- XSim Simulator
+- Modelsim
+- EDA Playground
+- Quartus Prime II
 - RTL Design & Simulation
 - Waveform Verification
 
