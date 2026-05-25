@@ -1,0 +1,45 @@
+`timescale 1ns/1ns
+
+module light_cntr_tb();
+
+  reg clk, reset;
+  wire red, green, yellow;
+
+  light_cnt dut(.clk(clk),.reset(reset),.red(red),.green(green),.yellow(yellow));
+
+  initial 
+  begin
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+
+  initial 
+  begin
+
+    $dumpfile("light_cntr_tb.vcd");
+    $dumpvars(0, light_cntr_tb);
+
+
+    reset = 1; #10;
+    reset = 0;
+
+    repeat(5)
+      @(posedge clk);
+
+    reset = 1; #10;
+    reset = 0;
+
+    repeat(15)
+      @(posedge clk);
+
+    $finish;
+  end
+
+  
+  always @(posedge clk) 
+  begin
+    $monitor("%4t    %b      %b     %b    %b",
+              $time, reset, red, green, yellow);
+  end
+
+endmodule
